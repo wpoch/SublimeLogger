@@ -1,16 +1,15 @@
 ﻿using System.Reflection;
-using System.Runtime.CompilerServices;
 using System.Runtime.InteropServices;
 
 // General Information about an assembly is controlled through the following 
 // set of attributes. Change these attribute values to modify the information
 // associated with an assembly.
-[assembly: AssemblyTitle("WP.SublimeLogger")]
+[assembly: AssemblyTitle("SublimeLogger")]
 [assembly: AssemblyDescription("")]
 [assembly: AssemblyConfiguration("")]
-[assembly: AssemblyCompany("Nuevo Banco de Santa Fe")]
-[assembly: AssemblyProduct("WP.SublimeLogger")]
-[assembly: AssemblyCopyright("Copyright © Nuevo Banco de Santa Fe 2011")]
+[assembly: AssemblyCompany("")]
+[assembly: AssemblyProduct("SublimeLogger")]
+[assembly: AssemblyCopyright("")]
 [assembly: AssemblyTrademark("")]
 [assembly: AssemblyCulture("")]
 
