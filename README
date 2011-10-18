@@ -2,10 +2,10 @@ This is a custom MSBuild logger in order to facilitate the Sublime Build System 
 
 In order to create a Build System for .net projects you should:
 
-# Clone this project.
-# Build it.
-# Go to Sublime and go to: Tools->Build Systems->New Build System
-# Paste this:
+1. Clone this project and build it.
+2. Go to Sublime and go to: Tools->Build Systems->New Build System
+3. Paste this:
+
 	{
 		"cmd": ["msbuild.exe", "${project_path}/${project_base_name}.sln","/noconsolelogger", "/logger:C:\\Projects\\SublimeLogger\\SublimeLogger\\bin\\Debug\\SublimeLogger.dll"],
 	    "file_regex": "^\\s[*]([^(]*)[(]([0-9]*)[,(][0-9]*[)][:](.*)$",
@@ -13,8 +13,13 @@ In order to create a Build System for .net projects you should:
 	}
 
 	Where C:\\Projects\\SublimeLogger\\SublimeLogger\\bin\\Debug\\SublimeLogger.dll is the escaped path to the compiled logger that you just build.
-# Save it.
-# Open a .net folder project in Sublime where the .sln file is located.
-# Save the Sublime project (Project->Save Project As) and use THE SAME name as the .sln .net solution.
+
+4. Save it.
+5. Open a .net folder project in Sublime where the .sln file is located.
+6. Save the Sublime project (Project->Save Project As) and use THE SAME name as the .sln .net solution.
 
 Now you can by pressing F7 build the solution, and if the compilation fails you could use F4 and Shift+F4 to loop between the files with compilation errors.
+
+
+
+If you have any issues don't hesitate to contact me directile or fill a bug.
